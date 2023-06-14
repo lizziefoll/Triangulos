@@ -13,10 +13,6 @@ frm.addEventListener("submit", (e) => {
    const lado2 = Number(frm.inLado2.value); 
    const lado3 = Number(frm.inLado3.value); 
 
-   //const media = (nota1 + nota2) /2; 
-
-   //resp1.innerText = `Média das Notas ${media.toFixed(2)}`;
-
    const soma1 = (lado1 + lado2);
    const soma2 = (lado1 + lado3);
    const soma3 = (lado2 + lado3);
@@ -31,7 +27,6 @@ frm.addEventListener("submit", (e) => {
         resp1.innerText = `pode formar um triangulo`;
    }
    
-
 
    if((lado1 == lado2) && (lado2 == lado3) && (lado1 == lado3)){
         resp2.innerText = `Triangulo equilátero`;
